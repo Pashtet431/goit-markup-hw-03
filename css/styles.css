@@ -5,6 +5,7 @@
   --main-color: #212121;
   --secondary-color: #757575;
   --light-color: #ffffff;
+  --background-color-comand: #f5f4fa;
 }
 
 .list {
@@ -18,11 +19,53 @@ body {
   color: var(--main-color);
 }
 
-/*  Шапка */
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
+address {
+  font-style: normal;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ============= Шапка =========== */
+
+.header {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
 
 .logo-web {
   color: var(--accent-color);
 }
+
 .logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -30,7 +73,23 @@ body {
   line-height: 1.2;
   letter-spacing: 0.03em;
   color: var(--logo-color);
+  margin-right: 90px;
 }
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.nav-list-mail {
+  margin-left: auto;
+  margin-right: 50px;
+}
+
 .nav-contacts {
   font-family: Roboto;
   font-weight: 500;
@@ -39,13 +98,16 @@ body {
   letter-spacing: 0.02em;
   color: var(--main-color);
 }
-.nav-list {
+.nav-list,
+.nav-list-mail {
   font-family: var(--basic-title);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--secondary-color);
+  display: flex;
+  align-items: center;
 }
 .nav-list:hover,
 .nav-list:focus,
@@ -59,6 +121,12 @@ address:focus {
 }
 .title {
   background-color: #2f303a;
+  height: 600px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .main-title {
@@ -70,6 +138,9 @@ address:focus {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--light-color);
+
+  width: 700px;
+  padding-bottom: 30px;
 }
 .btn {
   font-family: var(--basic-title);
@@ -83,6 +154,11 @@ address:focus {
   color: var(--light-color);
   background-color: var(--accent-color);
   cursor: pointer;
+
+  min-width: 200px;
+  padding: 10px 30px;
+  border-width: 0;
+  border-radius: 4px;
 }
 
 /* Наши преимущества */
@@ -108,6 +184,10 @@ address:focus {
 
 /* Чем мы занимаемся и наша команда */
 
+.command {
+  background-color: var(--background-color-comand);
+}
+
 .secondary-title {
   font-family: var(--basic-title);
   font-weight: 700;
@@ -117,6 +197,7 @@ address:focus {
   letter-spacing: 0.03em;
   color: var(--main-color);
 }
+
 .worker-title {
   font-family: var(--basic-title);
   font-weight: 500;
