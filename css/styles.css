@@ -10,7 +10,20 @@
 
 .list {
   list-style: none;
+
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+  padding-bottom: 90px;
 }
+
+.image:not(:last-child) {
+  margin-right: 30px;
+}
+.image {
+  background-color: var(--light-color);
+}
+
 .link {
   text-decoration: none;
 }
@@ -50,6 +63,9 @@ address {
   margin-right: auto;
 }
 
+.section {
+  padding-top: 90px;
+}
 /* ============= Шапка =========== */
 
 .header {
@@ -73,6 +89,7 @@ address {
   line-height: 1.2;
   letter-spacing: 0.03em;
   color: var(--logo-color);
+
   margin-right: 90px;
 }
 
@@ -100,12 +117,14 @@ address {
 }
 .nav-list,
 .nav-list-mail {
+  list-style: none;
   font-family: var(--basic-title);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--secondary-color);
+
   display: flex;
   align-items: center;
 }
@@ -116,17 +135,22 @@ address {
 .nav-list-f:hover,
 .nav-list-f:focus,
 .adress:hover,
-address:focus {
+address:focus,
+.nav-list-mail:hover,
+.nav-list-mail:focus {
   color: var(--accent-color);
 }
 .title {
   background-color: #2f303a;
+  width: 1200px;
   height: 600px;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: auto;
+  margin-bottom: 0px;
 }
 
 .main-title {
@@ -171,22 +195,33 @@ address:focus {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--main-color);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 10px;
 }
+
+.advantages-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .advantage-text {
   font-family: var(--basic-title);
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  text-transform: lowercase;
+  text-transform: none;
   color: var(--secondary-color);
+
+  height: 75px;
+  width: 270px;
 }
 
 /* Чем мы занимаемся и наша команда */
-
-.command {
-  background-color: var(--background-color-comand);
-}
 
 .secondary-title {
   font-family: var(--basic-title);
@@ -198,6 +233,10 @@ address:focus {
   color: var(--main-color);
 }
 
+.command {
+  background-color: var(--background-color-comand);
+}
+
 .worker-title {
   font-family: var(--basic-title);
   font-weight: 500;
@@ -206,6 +245,9 @@ address:focus {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-color);
+
+  padding-top: 30px;
+  padding-bottom: 10px;
 }
 .worker-position {
   font-family: var(--basic-title);
@@ -214,9 +256,26 @@ address:focus {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-color);
+
+  padding-bottom: 30px;
 }
 
 /* Футер */
+
+.logo-f {
+  color: var(--light-color);
+}
+
+.footer {
+  background-color: #2f303a;
+}
+
+.logo-web,
+.lolgo-f {
+  display: flex;
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
 
 .adress {
   font-family: var(--basic-title);
@@ -227,8 +286,8 @@ address:focus {
   color: var(--light-color);
 }
 
-.footer {
-  background-color: #2f303a;
+.contacts {
+  flex-direction: column;
 }
 
 .nav-list-f {
@@ -239,11 +298,8 @@ address:focus {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-.logo-f {
-  color: var(--light-color);
-}
 
-/* ==ПОРТФОЛИО== */
+/* =========== ПОРТФОЛИО ========== */
 
 /* Скрытый заголовок Н1 */
 
