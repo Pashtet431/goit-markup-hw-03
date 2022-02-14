@@ -366,6 +366,11 @@ address {
   color: var(--main-color);
   background-color: #f5f4fa;
   cursor: pointer;
+
+  min-height: 40px;
+  padding: 10px 30px;
+  border-width: 0;
+  border-radius: 4px;
 }
 
 .btn-p:hover,
@@ -375,6 +380,44 @@ address {
 }
 
 /* Подписи под работами */
+
+.list-p {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding-top: 90px;
+  padding-bottom: 50px;
+  padding-left: 8px;
+}
+
+.botton-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.work-images {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.main-work {
+  margin-left: 30px;
+  margin-top: 30px;
+  flex-basis: calc((100% - 90px) / 3);
+}
+
+.work-variants {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+  padding: 20px 24px;
+}
 
 .work-list {
   font-family: var(--basic-title);
