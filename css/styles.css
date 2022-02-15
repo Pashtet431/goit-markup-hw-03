@@ -385,15 +385,15 @@ address {
   display: flex;
   justify-content: center;
   list-style: none;
-  padding-top: 90px;
-  padding-bottom: 50px;
   padding-left: 8px;
 }
 
-.botton-list {
+.button-list {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 90px;
+  padding-bottom: 30px;
 }
 
 .work-images {
@@ -411,7 +411,7 @@ address {
 
 .work-variants {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: wrap;
   flex-direction: column;
   border: 1px solid #eeeeee;
@@ -427,6 +427,7 @@ address {
   letter-spacing: 0.06em;
   color: var(--main-color);
 }
+
 .work-type {
   font-family: var(--basic-title);
   font-size: 16px;
