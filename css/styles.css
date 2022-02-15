@@ -385,15 +385,15 @@ address {
   display: flex;
   justify-content: center;
   list-style: none;
-  padding-left: 8px;
+  margin-left: 8px;
 }
 
 .button-list {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 90px;
-  padding-bottom: 30px;
+  margin-top: 90px;
+  margin-bottom: 30px;
 }
 
 .work-images {
@@ -416,7 +416,7 @@ address {
   flex-direction: column;
   border: 1px solid #eeeeee;
   box-sizing: border-box;
-  padding: 20px 24px;
+  margin: 20px 24px;
 }
 
 .work-list {
