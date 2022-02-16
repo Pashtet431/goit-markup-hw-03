@@ -13,8 +13,6 @@
 
   display: flex;
   justify-content: space-between;
-  padding-top: 50px;
-  padding-bottom: 90px;
 }
 
 .image {
@@ -45,7 +43,9 @@ ol {
 }
 
 img {
+  max-width: 100%;
   display: block;
+  height: auto;
 }
 
 address {
@@ -53,21 +53,25 @@ address {
 }
 
 .container {
-  max-width: 1200px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+  
 }
 
 .section {
-  padding-top: 90px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
+
 /* ============= Шапка =========== */
 
 .header {
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #eeeeee;
 }
 
 .header-container {
@@ -100,11 +104,6 @@ address {
   margin-right: 50px;
 }
 
-.nav-list-mail {
-  margin-left: auto;
-  margin-right: 50px;
-}
-
 .nav-contacts {
   font-family: Roboto;
   font-weight: 500;
@@ -113,6 +112,7 @@ address {
   letter-spacing: 0.02em;
   color: var(--main-color);
 }
+
 .nav-list,
 .nav-list-mail {
   list-style: none;
@@ -126,6 +126,16 @@ address {
   display: flex;
   align-items: center;
 }
+
+.nav-title {
+  display: flex;
+  margin-left: auto;
+}
+
+.nav-list-mail {
+  margin-right: 50px;
+}
+
 .nav-list:hover,
 .nav-list:focus,
 .nav-contacts:hover,
@@ -138,17 +148,14 @@ address {
 .nav-list-mail:focus {
   color: var(--accent-color);
 }
-.title {
+
+.hero {
   background-color: #2f303a;
-  width: 1200px;
-  height: 600px;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: auto;
-  margin-bottom: 0px;
 }
 
 .main-title {
@@ -162,7 +169,7 @@ address {
   color: var(--light-color);
 
   width: 700px;
-  padding-bottom: 30px;
+  margin-top: 200px;
 }
 
 .btn {
@@ -170,6 +177,7 @@ address {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
+
   display: flex;
   align-items: center;
   text-align: center;
@@ -182,6 +190,9 @@ address {
   padding: 10px 30px;
   border-width: 0;
   border-radius: 4px;
+
+  margin-top: 30px;
+  margin-bottom: 200px;
 }
 
 /* Наши преимущества */
@@ -195,16 +206,16 @@ address {
   text-transform: uppercase;
   color: var(--main-color);
 
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .advantages-list {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+}
+
+.advantages-list:not(:last-child) {
+  margin-top: 94px;
+  margin-left: 30px;
 }
 
 .advantage-text {
@@ -221,6 +232,10 @@ address {
 }
 
 /* Чем мы занимаемся и наша команда */
+
+.work-section {
+  padding-top: 0;
+}
 
 .secondary-title {
   font-family: var(--basic-title);
@@ -242,6 +257,14 @@ address {
   flex-wrap: wrap;
   margin-left: -30px;
   margin-top: -30px;
+}
+
+.we-do {
+  margin-top: 50px;
+}
+
+.our-team {
+  margin-top: 50px;
 }
 
 .images {
@@ -271,8 +294,7 @@ address {
   letter-spacing: 0.03em;
   color: var(--main-color);
 
-  padding-top: 30px;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 .worker-position {
   font-family: var(--basic-title);
@@ -285,6 +307,11 @@ address {
   padding-bottom: 30px;
 }
 
+.worker-names {
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
 /* Футер */
 
 .logo-s {
@@ -293,23 +320,17 @@ address {
 
 .footer {
   background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .logo-f {
   display: flex;
-  padding-top: 60px;
-  padding-bottom: 20px;
-}
-
-.adre {
-  display: flex;
-  padding-bottom: 60px;
+  margin-bottom: 20px;
 }
 
 .list-f {
   list-style: none;
-  display: flex;
-  justify-content: space-between;
 }
 
 .adress {
@@ -321,10 +342,6 @@ address {
   color: var(--light-color);
 }
 
-.contacts {
-  flex-direction: column;
-}
-
 .nav-list-f {
   font-family: var(--basic-title);
   font-style: normal;
@@ -332,6 +349,10 @@ address {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+
+.nav-list-f:not(:last-child) {
+  margin-top: 9px;
 }
 
 /* =========== ПОРТФОЛИО ========== */
@@ -368,7 +389,7 @@ address {
   cursor: pointer;
 
   min-height: 40px;
-  padding: 10px 30px;
+  padding: 6px 22px;
   border-width: 0;
   border-radius: 4px;
 }
@@ -382,18 +403,18 @@ address {
 /* Подписи под работами */
 
 .list-p {
-  display: flex;
-  justify-content: center;
   list-style: none;
-  padding-left: 8px;
+}
+
+.list-p:not(:last-child) {
+  margin-right: 8px;
 }
 
 .button-list {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 90px;
-  padding-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 .work-images {
@@ -410,12 +431,7 @@ address {
 }
 
 .work-variants {
-  display: flex;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  flex-direction: column;
   border: 1px solid #eeeeee;
-  box-sizing: border-box;
   padding: 20px 24px;
 }
 
@@ -434,4 +450,6 @@ address {
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--secondary-color);
+
+  margin-top: 8px;
 }
