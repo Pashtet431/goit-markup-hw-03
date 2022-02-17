@@ -91,7 +91,7 @@ address {
   letter-spacing: 0.03em;
   color: var(--logo-color);
 
-  margin-right: 90px;
+  margin-right: 93px;
 }
 
 .navigation {
@@ -167,8 +167,9 @@ address {
   text-transform: uppercase;
   color: var(--light-color);
 
-  width: 700px;
+  width: 696px;
   margin-top: 200px;
+  margin-bottom: 30px;
 }
 
 .btn {
@@ -186,7 +187,7 @@ address {
   cursor: pointer;
 
   min-width: 200px;
-  padding: 10px 30px;
+  padding: 10px 32px;
   border-width: 0;
   border-radius: 4px;
 
@@ -258,19 +259,19 @@ address {
   margin-top: -30px;
 }
 
+.images {
+  justify-content: center;
+  margin-left: 30px;
+  margin-top: 30px;
+  flex-basis: calc((100% - 90px) / 3);
+}
+
 .we-do {
   margin-top: 50px;
 }
 
 .our-team {
   margin-top: 50px;
-}
-
-.images {
-  justify-content: center;
-  margin-left: 30px;
-  margin-top: 30px;
-  flex-basis: calc((100% - 90px) / 3);
 }
 
 .image {
@@ -295,6 +296,7 @@ address {
 
   margin-bottom: 10px;
 }
+
 .worker-position {
   font-family: var(--basic-title);
   font-size: 16px;
@@ -302,13 +304,11 @@ address {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-color);
-
-  padding-bottom: 30px;
 }
 
 .worker-names {
   padding-top: 30px;
-  padding-bottom: 10px;
+  padding-bottom: 30px;
 }
 
 /* Футер */
@@ -350,7 +350,7 @@ address {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.nav-list-f:not(:last-child) {
+.footer-nav {
   margin-top: 9px;
 }
 
@@ -371,11 +371,6 @@ address {
 
 /* Кнопки сортировки работ */
 
-.button-list {
-  display: flex;
-  align-items: center;
-}
-
 .btn-p {
   font-family: var(--basic-title);
   font-weight: 500;
@@ -387,7 +382,7 @@ address {
   background-color: #f5f4fa;
   cursor: pointer;
 
-  min-height: 40px;
+  min-height: 38px;
   padding: 6px 22px;
   border-width: 0;
   border-radius: 4px;
@@ -450,5 +445,5 @@ address {
   letter-spacing: 0.03em;
   color: var(--secondary-color);
 
-  margin-top: 8px;
+  margin-top: 4px;
 }
